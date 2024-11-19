@@ -7,7 +7,7 @@ workflows:
   - id: scup6a58vhs
     name: film_onboarding_api.json
     file: in_context_loras/film_onboarding_api.json
-    version: 1
+    version: 2
     description: ''
     inputs: []
     outputs: []
@@ -16,4 +16,4 @@ normal_workflows:
   - id: f0rs23vqy3d
     name: film_onboarding.json
     file: in_context_loras/film_onboarding.json
-    version: 1
+    version: 2
