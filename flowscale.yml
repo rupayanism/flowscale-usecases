@@ -7,7 +7,7 @@ workflows:
   - id: scup6a58vhs
     name: basic_workflow_api.json
     file: in_context_lora_workflows/basic_workflow_api.json
-    version: 3
+    version: 4
     description: ''
     inputs: []
     outputs: []
@@ -16,4 +16,4 @@ normal_workflows:
   - id: f0rs23vqy3d
     name: basic_workflow.json
     file: in_context_lora_workflows/basic_workflow.json
-    version: 3
+    version: 4
