@@ -1,3 +1,26 @@
-
-[]
-      
+[
+  {
+    "name": "ComfyUI-WJNodes",
+    "url": "https://github.com/807502278/ComfyUI-WJNodes",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "807502278",
+      "title": "ComfyUI-WJNodes",
+      "reference": "https://github.com/807502278/ComfyUI-WJNodes",
+      "files": [
+        "https://github.com/807502278/ComfyUI-WJNodes"
+      ],
+      "install_type": "git-clone",
+      "description": "Ready to use upon download. No need to install dependencies for the time being.\nIf there are new functions or suggestions, please provide feedback.\nAttention! The delfile node is not recommended for use on servers. I am not responsible for any losses incurred."
+    },
+    "nodes": [
+      "PrimitiveNode",
+      "PrimitiveNode"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  }
+]
