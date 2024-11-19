@@ -111,7 +111,7 @@
     },
     "25": {
         "inputs": {
-            "noise_seed": 214745608818757
+            "noise_seed": 108320899374267
         },
         "class_type": "RandomNoise"
     },
@@ -148,7 +148,7 @@
     },
     "38": {
         "inputs": {
-            "lora_name": "movie-shots.safetensors",
+            "lora_name": "in-context/film-storyboard.safetensors",
             "strength_model": 1,
             "strength_clip": 1,
             "model": [
