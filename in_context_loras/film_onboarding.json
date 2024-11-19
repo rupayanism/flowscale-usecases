@@ -477,7 +477,7 @@
                 "Node name for S&R": "RandomNoise"
             },
             "widgets_values": [
-                214745608818757,
+                108320899374267,
                 "randomize"
             ],
             "color": "#2a363b",
@@ -650,59 +650,6 @@
             "bgcolor": "#335"
         },
         {
-            "id": 38,
-            "type": "LoraLoader",
-            "pos": [
-                50,
-                97
-            ],
-            "size": {
-                "0": 315,
-                "1": 126
-            },
-            "flags": {},
-            "order": 10,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "model",
-                    "type": "MODEL",
-                    "link": 117
-                },
-                {
-                    "name": "clip",
-                    "type": "CLIP",
-                    "link": 118
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "MODEL",
-                    "type": "MODEL",
-                    "links": [
-                        120
-                    ],
-                    "slot_index": 0
-                },
-                {
-                    "name": "CLIP",
-                    "type": "CLIP",
-                    "links": [
-                        119
-                    ],
-                    "slot_index": 1
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "LoraLoader"
-            },
-            "widgets_values": [
-                "movie-shots.safetensors",
-                1,
-                1
-            ]
-        },
-        {
             "id": 11,
             "type": "DualCLIPLoader",
             "pos": [
@@ -768,6 +715,59 @@
             },
             "widgets_values": [
                 "ae.safetensors"
+            ]
+        },
+        {
+            "id": 38,
+            "type": "LoraLoader",
+            "pos": [
+                50,
+                97
+            ],
+            "size": {
+                "0": 315,
+                "1": 126
+            },
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 117
+                },
+                {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 118
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "MODEL",
+                    "type": "MODEL",
+                    "links": [
+                        120
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "CLIP",
+                    "type": "CLIP",
+                    "links": [
+                        119
+                    ],
+                    "slot_index": 1
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "LoraLoader"
+            },
+            "widgets_values": [
+                "in-context/film-storyboard.safetensors",
+                1,
+                1
             ]
         }
     ],
@@ -937,10 +937,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.8954302432552445,
+            "scale": 0.814027493868404,
             "offset": [
-                23.261270979770533,
-                -84.78556536570504
+                21.537556686315625,
+                56.2569680435667
             ]
         },
         "groupNodes": {}
