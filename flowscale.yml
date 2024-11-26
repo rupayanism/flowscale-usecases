@@ -1,4 +1,4 @@
-version: 4
+version: 5
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -12,21 +12,35 @@ workflows:
     inputs:
       - path: 6.inputs.text
         label: Positive Prompt
-        parameter_name: text_18925
+        parameter_name: text_30490
         type: string
         demo_type: text
         category: input
         randomize: false
+      - path: 38.inputs.strength_model
+        label: Strength Model
+        parameter_name: strength_model_81009
+        type: integer
+        demo_type: number
+        category: input
+        randomize: false
+      - path: 38.inputs.strength_clip
+        label: Strength Clip
+        parameter_name: strength_clip_65080
+        type: integer
+        demo_type: number
+        category: input
+        randomize: false
       - path: 26.inputs.guidance
-        label: Flux Guidance Scale
-        parameter_name: guidance_85342
+        label: Flux Guidance
+        parameter_name: guidance_56980
         type: integer
         demo_type: number
         category: input
         randomize: false
       - path: 9.inputs.filename_prefix
         label: filename_prefix
-        parameter_name: filename_prefix_24507
+        parameter_name: filename_prefix_76462
         type: string
         demo_type: text
         category: output
