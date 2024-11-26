@@ -1,4 +1,4 @@
-version: 3
+version: 4
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -12,21 +12,21 @@ workflows:
     inputs:
       - path: 6.inputs.text
         label: Positive Prompt
-        parameter_name: text_21658
+        parameter_name: text_18925
         type: string
         demo_type: text
         category: input
         randomize: false
       - path: 26.inputs.guidance
-        label: CFG Scale
-        parameter_name: guidance_18057
+        label: Flux Guidance Scale
+        parameter_name: guidance_85342
         type: integer
         demo_type: number
         category: input
         randomize: false
       - path: 9.inputs.filename_prefix
         label: filename_prefix
-        parameter_name: filename_prefix_77196
+        parameter_name: filename_prefix_24507
         type: string
         demo_type: text
         category: output
