@@ -42,5 +42,26 @@
     "pip": [],
     "apt": [],
     "cached": "False"
+  },
+  {
+    "name": "PuLID_ComfyUI",
+    "url": "https://github.com/cubiq/PuLID_ComfyUI",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "cubiq",
+      "title": "PuLID_ComfyUI",
+      "id": "pulid",
+      "reference": "https://github.com/cubiq/PuLID_ComfyUI",
+      "files": [
+        "https://github.com/cubiq/PuLID_ComfyUI"
+      ],
+      "install_type": "git-clone",
+      "description": "[a/PuLID](https://github.com/ToTheBeginning/PuLID) ComfyUI native implementation."
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
   }
 ]
