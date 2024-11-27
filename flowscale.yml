@@ -54,3 +54,7 @@ normal_workflows:
     name: basic_workflow.json
     file: in_context_lora_workflows/basic_workflow.json
     version: 4
+  - id: w7nvpr4zlfj
+    name: logo_visualizer.json
+    file: in_context_lora_workflows/logo_visualizer.json
+    version: 0
