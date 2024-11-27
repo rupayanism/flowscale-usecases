@@ -1,0 +1,311 @@
+{
+    "175": {
+        "inputs": {
+            "vae_name": "ae.safetensors"
+        },
+        "class_type": "VAELoader"
+    },
+    "176": {
+        "inputs": {
+            "clip_name1": "flux/clip_l.safetensors",
+            "clip_name2": "flux/t5xxl_fp16.safetensors",
+            "type": "flux"
+        },
+        "class_type": "DualCLIPLoader"
+    },
+    "177": {
+        "inputs": {
+            "clip_l": "",
+            "t5xxl": "These two images show a logo design and its coffee brand; [Image 1] A logo; [Image 2] The same logo printed on a disposable coffee cup, elegantly wrapped around the paper surface of the coffee cup",
+            "guidance": 2.8000000000000003,
+            "clip": [
+                "198",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncodeFlux"
+    },
+    "179": {
+        "inputs": {
+            "unet_name": "flux1-dev-fp8.safetensors",
+            "weight_dtype": "default"
+        },
+        "class_type": "UNETLoader"
+    },
+    "180": {
+        "inputs": {
+            "image": "FlowScale White.png",
+            "upload": "image"
+        },
+        "class_type": "LoadImage"
+    },
+    "181": {
+        "inputs": {
+            "direction": "right",
+            "match_image_size": true,
+            "image1": [
+                "188",
+                0
+            ],
+            "image2": [
+                "188",
+                0
+            ]
+        },
+        "class_type": "ImageConcanate"
+    },
+    "182": {
+        "inputs": {
+            "width": [
+                "193",
+                1
+            ],
+            "height": [
+                "193",
+                2
+            ],
+            "shape": "square",
+            "shape_color": "black",
+            "back_color": "black",
+            "x_offset": 0,
+            "y_offset": 0,
+            "zoom": 1,
+            "rotation": 0,
+            "shape_color_hex": "#000000",
+            "bg_color_hex": "#000000"
+        },
+        "class_type": "CR Draw Shape"
+    },
+    "183": {
+        "inputs": {
+            "direction": "right",
+            "match_image_size": true,
+            "image1": [
+                "182",
+                0
+            ],
+            "image2": [
+                "185",
+                0
+            ]
+        },
+        "class_type": "ImageConcanate"
+    },
+    "184": {
+        "inputs": {
+            "max_shift": 1,
+            "base_shift": 0.2,
+            "width": [
+                "186",
+                0
+            ],
+            "height": [
+                "186",
+                1
+            ],
+            "model": [
+                "198",
+                0
+            ]
+        },
+        "class_type": "ModelSamplingFlux"
+    },
+    "185": {
+        "inputs": {
+            "width": [
+                "193",
+                1
+            ],
+            "height": [
+                "193",
+                2
+            ],
+            "shape": "square",
+            "shape_color": "white",
+            "back_color": "white",
+            "x_offset": 0,
+            "y_offset": 0,
+            "zoom": 1,
+            "rotation": 0,
+            "shape_color_hex": "#000000",
+            "bg_color_hex": "#000000"
+        },
+        "class_type": "CR Draw Shape"
+    },
+    "186": {
+        "inputs": {
+            "image": [
+                "181",
+                0
+            ]
+        },
+        "class_type": "GetImageSize+"
+    },
+    "187": {
+        "inputs": {
+            "pixels": [
+                "181",
+                0
+            ],
+            "vae": [
+                "175",
+                0
+            ]
+        },
+        "class_type": "VAEEncode"
+    },
+    "188": {
+        "inputs": {
+            "width": 768,
+            "height": 768,
+            "upscale_method": "bilinear",
+            "keep_proportion": false,
+            "divisible_by": 2,
+            "crop": "center",
+            "image": [
+                "180",
+                0
+            ]
+        },
+        "class_type": "ImageResizeKJ"
+    },
+    "189": {
+        "inputs": {
+            "channel": "red",
+            "image": [
+                "183",
+                0
+            ]
+        },
+        "class_type": "ImageToMask"
+    },
+    "190": {
+        "inputs": {
+            "samples": [
+                "187",
+                0
+            ],
+            "mask": [
+                "189",
+                0
+            ]
+        },
+        "class_type": "SetLatentNoiseMask"
+    },
+    "191": {
+        "inputs": {
+            "seed": 608344411216455,
+            "steps": 20,
+            "cfg": 1,
+            "sampler_name": "deis",
+            "scheduler": "beta",
+            "denoise": 1,
+            "preview_method": "auto",
+            "vae_decode": "true",
+            "model": [
+                "184",
+                0
+            ],
+            "positive": [
+                "177",
+                0
+            ],
+            "negative": [
+                "177",
+                0
+            ],
+            "latent_image": [
+                "190",
+                0
+            ],
+            "optional_vae": [
+                "175",
+                0
+            ]
+        },
+        "class_type": "KSampler (Efficient)"
+    },
+    "192": {
+        "inputs": {
+            "width": [
+                "193",
+                1
+            ],
+            "height": [
+                "193",
+                2
+            ],
+            "x": [
+                "193",
+                1
+            ],
+            "y": 0,
+            "image": [
+                "191",
+                5
+            ]
+        },
+        "class_type": "ImageCrop"
+    },
+    "193": {
+        "inputs": {
+            "image": [
+                "188",
+                0
+            ]
+        },
+        "class_type": "GetImageSizeAndCount"
+    },
+    "194": {
+        "inputs": {
+            "images": [
+                "192",
+                0
+            ]
+        },
+        "class_type": "PreviewImage"
+    },
+    "195": {
+        "inputs": {
+            "images": [
+                "188",
+                0
+            ]
+        },
+        "class_type": "PreviewImage"
+    },
+    "196": {
+        "inputs": {
+            "images": [
+                "181",
+                0
+            ]
+        },
+        "class_type": "PreviewImage"
+    },
+    "197": {
+        "inputs": {
+            "images": [
+                "183",
+                0
+            ]
+        },
+        "class_type": "PreviewImage"
+    },
+    "198": {
+        "inputs": {
+            "lora_name": "in-context/visual-identity-design.safetensors",
+            "strength_model": 1,
+            "strength_clip": 1,
+            "model": [
+                "179",
+                0
+            ],
+            "clip": [
+                "176",
+                0
+            ]
+        },
+        "class_type": "LoraLoader"
+    }
+}
