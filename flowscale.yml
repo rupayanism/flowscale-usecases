@@ -1,4 +1,4 @@
-version: 5
+version: 6
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -54,8 +54,38 @@ workflows:
     file: in_context_lora_workflows/logo_visualizer_api.json
     version: 2
     description: ''
-    inputs: []
-    outputs: []
+    inputs:
+      - path: 177.inputs.t5xxl
+        label: Positive Prompt
+        parameter_name: t5xxl_12599
+        type: string
+        demo_type: text
+        category: input
+        randomize: false
+      - path: 180.inputs.image
+        label: Logo Image
+        parameter_name: image_67231
+        type: string
+        demo_type: image
+        category: input
+        randomize: false
+      - path: 191.inputs.cfg
+        label: CFG Scale
+        parameter_name: cfg_68654
+        type: integer
+        demo_type: number
+        category: input
+        randomize: false
+      - path: 199.inputs.filename_prefix
+        label: filename_prefix
+        parameter_name: filename_prefix_75275
+        type: string
+        demo_type: text
+        category: output
+        randomize: true
+    outputs:
+      - label: Output Image
+        demo_type: image
     skip_preprocess: true
 normal_workflows:
   - id: f0rs23vqy3d
