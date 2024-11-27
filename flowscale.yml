@@ -54,3 +54,7 @@ normal_workflows:
     name: basic_workflow.json
     file: in_context_lora_workflows/basic_workflow.json
     version: 4
+  - id: o4yuxck4k4g
+    name: accessories_tryon.json
+    file: in_context_lora_workflows/accessories_tryon.json
+    version: 0
