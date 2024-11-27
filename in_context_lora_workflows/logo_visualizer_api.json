@@ -307,5 +307,15 @@
             ]
         },
         "class_type": "LoraLoader"
+    },
+    "199": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "192",
+                0
+            ]
+        },
+        "class_type": "SaveImage"
     }
 }
