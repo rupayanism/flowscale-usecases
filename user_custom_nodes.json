@@ -24,30 +24,6 @@
     "cached": "False"
   },
   {
-    "name": "ComfyUI_Mira",
-    "url": "https://github.com/mirabarukaso/ComfyUI_Mira",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {
-      "author": "mirabarukaso",
-      "title": "ComfyUI_Mira",
-      "id": "mira",
-      "reference": "https://github.com/mirabarukaso/ComfyUI_Mira",
-      "files": [
-        "https://github.com/mirabarukaso/ComfyUI_Mira"
-      ],
-      "install_type": "git-clone",
-      "description": "Nodes:Integer Multiplier, Float Multiplier, Convert Numeral to String, Create Canvas Advanced, Create Canvas, Create PNG Mask, Color Mask to HEX String, Color Mask to INT RGB, Color Masks to List"
-    },
-    "nodes": [
-      "TextCombinerSix"
-    ],
-    "apt": [],
-    "pip": [],
-    "preemptions": [],
-    "cached": "False"
-  },
-  {
     "name": "Comfyroll Studio",
     "url": "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes",
     "path": "custom_nodes",
