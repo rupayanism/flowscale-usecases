@@ -22,5 +22,180 @@
     "pip": [],
     "preemptions": [],
     "cached": "False"
+  },
+  {
+    "name": "ComfyUI Easy Use",
+    "url": "https://github.com/yolain/ComfyUI-Easy-Use",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "yolain",
+      "title": "ComfyUI Easy Use",
+      "reference": "https://github.com/yolain/ComfyUI-Easy-Use",
+      "files": [
+        "https://github.com/yolain/ComfyUI-Easy-Use"
+      ],
+      "install_type": "git-clone",
+      "description": "To enhance the usability of ComfyUI, optimizations and integrations have been implemented for several commonly used nodes."
+    },
+    "nodes": [
+      "easy cleanGpuUsed",
+      "easy imageSize",
+      "easy imageSize",
+      "easy prompt",
+      "easy prompt",
+      "easy prompt",
+      "easy prompt"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI Essentials",
+    "url": "https://github.com/cubiq/ComfyUI_essentials",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "cubiq",
+      "title": "ComfyUI Essentials",
+      "id": "essentials",
+      "reference": "https://github.com/cubiq/ComfyUI_essentials",
+      "files": [
+        "https://github.com/cubiq/ComfyUI_essentials"
+      ],
+      "install_type": "git-clone",
+      "description": "Essential nodes that are weirdly missing from ComfyUI core. With few exceptions they are new features and not commodities. I hope this will be just a temporary repository until the nodes get included into ComfyUI."
+    },
+    "nodes": [
+      "ImageResize+",
+      "MaskPreview+",
+      "MaskPreview+",
+      "ImageCrop+"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI_Mira",
+    "url": "https://github.com/mirabarukaso/ComfyUI_Mira",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "mirabarukaso",
+      "title": "ComfyUI_Mira",
+      "id": "mira",
+      "reference": "https://github.com/mirabarukaso/ComfyUI_Mira",
+      "files": [
+        "https://github.com/mirabarukaso/ComfyUI_Mira"
+      ],
+      "install_type": "git-clone",
+      "description": "Nodes:Integer Multiplier, Float Multiplier, Convert Numeral to String, Create Canvas Advanced, Create Canvas, Create PNG Mask, Color Mask to HEX String, Color Mask to INT RGB, Color Masks to List"
+    },
+    "nodes": [
+      "TextCombinerSix"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "Comfyroll Studio",
+    "url": "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Suzie1",
+      "title": "Comfyroll Studio",
+      "id": "comfyroll",
+      "reference": "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes",
+      "files": [
+        "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
+      ],
+      "install_type": "git-clone",
+      "description": "Custom nodes for SDXL and SD1.5 including Multi-ControlNet, LoRA, Aspect Ratio, Process Switches, and many more nodes. NOTE: Maintainer is changed to Suzie1 from RockOfFire. [w/Using an outdated version has resulted in reported issues with updates not being applied. Trying to reinstall the software is advised.]"
+    },
+    "nodes": [
+      "CR Simple Image Compare"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-BiRefNet-Hugo",
+    "url": "https://github.com/MoonHugo/ComfyUI-BiRefNet-Hugo",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Hugo",
+      "title": "ComfyUI-BiRefNet-Hugo",
+      "id": "BiRefNet",
+      "reference": "https://github.com/MoonHugo/ComfyUI-BiRefNet-Hugo",
+      "files": [
+        "https://github.com/MoonHugo/ComfyUI-BiRefNet-Hugo"
+      ],
+      "install_type": "git-clone",
+      "description": "This repository wraps the latest BiRefNet model as ComfyUI nodes. Compared to the previous model, the latest model offers higher and better matting accuracy."
+    },
+    "nodes": [
+      "BiRefNet_Hugo"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "Clothing Migration Kit",
+    "url": "https://github.com/TTPlanetPig/Comfyui_Object_Migration",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "TTPlanetPig",
+      "title": "Clothing Migration Kit",
+      "reference": "https://github.com/TTPlanetPig/Comfyui_Object_Migration",
+      "files": [
+        "https://github.com/TTPlanetPig/Comfyui_Object_Migration"
+      ],
+      "install_type": "git-clone",
+      "description": "This is an experimental project focused on Stable Diffusion (SD) models. In a single generated image, the same object or character consistently maintains a very high level of consistency. I had already attempted to address this issue in the SDXL model."
+    },
+    "nodes": [
+      "TTP_Expand_And_Mask"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "pythongosssss/ComfyUI-Custom-Scripts",
+    "url": "https://github.com/pythongosssss/ComfyUI-Custom-Scripts",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "pythongosssss",
+      "title": "pythongosssss/ComfyUI-Custom-Scripts",
+      "id": "pygos-script",
+      "reference": "https://github.com/pythongosssss/ComfyUI-Custom-Scripts",
+      "files": [
+        "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+      ],
+      "install_type": "git-clone",
+      "description": "This extension provides: Auto Arrange Graph, Workflow SVG, Favicon Status, Image Feed, Latent Upscale By, Lock Nodes & Groups, Lora Subfolders, Preset Text, Show Text, Touch Support, Link Render Mode, Locking, Node Finder, Quick Nodes, Show Image On Menu, Show Text, Workflow Managements, Custom Widget Default Values"
+    },
+    "nodes": [
+      "ShowText|pysssss"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
   }
 ]
