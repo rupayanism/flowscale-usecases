@@ -49,6 +49,14 @@ workflows:
       - label: Output Image
         demo_type: image
     skip_preprocess: true
+  - id: 3v3m7br9qo6
+    name: logo_visualizer_api.json
+    file: in_context_lora_workflows/logo_visualizer_api.json
+    version: 1
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: f0rs23vqy3d
     name: basic_workflow.json
@@ -57,4 +65,4 @@ normal_workflows:
   - id: w7nvpr4zlfj
     name: logo_visualizer.json
     file: in_context_lora_workflows/logo_visualizer.json
-    version: 0
+    version: 1
