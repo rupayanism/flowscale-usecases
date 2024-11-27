@@ -24,30 +24,6 @@
     "cached": "False"
   },
   {
-    "name": "ComfyUI-BiRefNet-Hugo",
-    "url": "https://github.com/MoonHugo/ComfyUI-BiRefNet-Hugo",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {
-      "author": "Hugo",
-      "title": "ComfyUI-BiRefNet-Hugo",
-      "id": "BiRefNet",
-      "reference": "https://github.com/MoonHugo/ComfyUI-BiRefNet-Hugo",
-      "files": [
-        "https://github.com/MoonHugo/ComfyUI-BiRefNet-Hugo"
-      ],
-      "install_type": "git-clone",
-      "description": "This repository wraps the latest BiRefNet model as ComfyUI nodes. Compared to the previous model, the latest model offers higher and better matting accuracy."
-    },
-    "nodes": [
-      "BiRefNet_Hugo"
-    ],
-    "apt": [],
-    "pip": [],
-    "preemptions": [],
-    "cached": "False"
-  },
-  {
     "name": "Clothing Migration Kit",
     "url": "https://github.com/TTPlanetPig/Comfyui_Object_Migration",
     "path": "custom_nodes",
