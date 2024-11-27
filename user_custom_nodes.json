@@ -24,29 +24,6 @@
     "cached": "False"
   },
   {
-    "name": "Clothing Migration Kit",
-    "url": "https://github.com/TTPlanetPig/Comfyui_Object_Migration",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {
-      "author": "TTPlanetPig",
-      "title": "Clothing Migration Kit",
-      "reference": "https://github.com/TTPlanetPig/Comfyui_Object_Migration",
-      "files": [
-        "https://github.com/TTPlanetPig/Comfyui_Object_Migration"
-      ],
-      "install_type": "git-clone",
-      "description": "This is an experimental project focused on Stable Diffusion (SD) models. In a single generated image, the same object or character consistently maintains a very high level of consistency. I had already attempted to address this issue in the SDXL model."
-    },
-    "nodes": [
-      "TTP_Expand_And_Mask"
-    ],
-    "apt": [],
-    "pip": [],
-    "preemptions": [],
-    "cached": "False"
-  },
-  {
     "name": "pythongosssss/ComfyUI-Custom-Scripts",
     "url": "https://github.com/pythongosssss/ComfyUI-Custom-Scripts",
     "path": "custom_nodes",
