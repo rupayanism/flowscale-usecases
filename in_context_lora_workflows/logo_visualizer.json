@@ -1,50 +1,7 @@
 {
-    "last_node_id": 198,
-    "last_link_id": 346,
+    "last_node_id": 199,
+    "last_link_id": 347,
     "nodes": [
-        {
-            "id": 177,
-            "type": "CLIPTextEncodeFlux",
-            "pos": [
-                -550.322021484375,
-                2342.082763671875
-            ],
-            "size": {
-                "0": 384.5967102050781,
-                "1": 348.4637145996094
-            },
-            "flags": {},
-            "order": 10,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "clip",
-                    "type": "CLIP",
-                    "link": 338,
-                    "label": "clip"
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "CONDITIONING",
-                    "type": "CONDITIONING",
-                    "links": [
-                        324,
-                        325
-                    ],
-                    "slot_index": 0,
-                    "label": "CONDITIONING"
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "CLIPTextEncodeFlux"
-            },
-            "widgets_values": [
-                "",
-                "These two images show a logo design and its coffee brand; [Image 1] A logo; [Image 2] The same logo printed on a disposable coffee cup, elegantly wrapped around the paper surface of the coffee cup",
-                2.8000000000000003
-            ]
-        },
         {
             "id": 181,
             "type": "ImageConcanate",
@@ -57,7 +14,7 @@
                 "1": 102
             },
             "flags": {},
-            "order": 7,
+            "order": 6,
             "mode": 0,
             "inputs": [
                 {
@@ -95,190 +52,6 @@
             ]
         },
         {
-            "id": 182,
-            "type": "CR Draw Shape",
-            "pos": [
-                19.677946090698242,
-                2825.082275390625
-            ],
-            "size": {
-                "0": 210.61248779296875,
-                "1": 270
-            },
-            "flags": {},
-            "order": 14,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "width",
-                    "type": "INT",
-                    "link": 307,
-                    "widget": {
-                        "name": "width"
-                    },
-                    "label": "width"
-                },
-                {
-                    "name": "height",
-                    "type": "INT",
-                    "link": 308,
-                    "widget": {
-                        "name": "height"
-                    },
-                    "label": "height"
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
-                    "links": [
-                        309
-                    ],
-                    "slot_index": 0,
-                    "label": "IMAGE"
-                },
-                {
-                    "name": "show_help",
-                    "type": "STRING",
-                    "links": null,
-                    "label": "show_help"
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "CR Draw Shape"
-            },
-            "widgets_values": [
-                512,
-                512,
-                "square",
-                "black",
-                "black",
-                0,
-                0,
-                1,
-                0,
-                "#000000",
-                "#000000"
-            ]
-        },
-        {
-            "id": 183,
-            "type": "ImageConcanate",
-            "pos": [
-                263.2742004394531,
-                2948.44140625
-            ],
-            "size": {
-                "0": 210,
-                "1": 102
-            },
-            "flags": {},
-            "order": 17,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "image1",
-                    "type": "IMAGE",
-                    "link": 309,
-                    "label": "image1"
-                },
-                {
-                    "name": "image2",
-                    "type": "IMAGE",
-                    "link": 310,
-                    "label": "image2"
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
-                    "links": [
-                        320,
-                        336
-                    ],
-                    "slot_index": 0,
-                    "label": "IMAGE"
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "ImageConcanate"
-            },
-            "widgets_values": [
-                "right",
-                true
-            ]
-        },
-        {
-            "id": 185,
-            "type": "CR Draw Shape",
-            "pos": [
-                19.677946090698242,
-                3166.4140625
-            ],
-            "size": {
-                "0": 210,
-                "1": 270
-            },
-            "flags": {},
-            "order": 15,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "width",
-                    "type": "INT",
-                    "link": 314,
-                    "widget": {
-                        "name": "width"
-                    },
-                    "label": "width"
-                },
-                {
-                    "name": "height",
-                    "type": "INT",
-                    "link": 315,
-                    "widget": {
-                        "name": "height"
-                    },
-                    "label": "height"
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
-                    "links": [
-                        310
-                    ],
-                    "slot_index": 0,
-                    "label": "IMAGE"
-                },
-                {
-                    "name": "show_help",
-                    "type": "STRING",
-                    "links": null,
-                    "label": "show_help"
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "CR Draw Shape"
-            },
-            "widgets_values": [
-                512,
-                512,
-                "square",
-                "white",
-                "white",
-                0,
-                0,
-                1,
-                0,
-                "#000000",
-                "#000000"
-            ]
-        },
-        {
             "id": 186,
             "type": "GetImageSize+",
             "pos": [
@@ -290,7 +63,7 @@
                 "1": 66
             },
             "flags": {},
-            "order": 11,
+            "order": 10,
             "mode": 0,
             "inputs": [
                 {
@@ -342,7 +115,7 @@
                 "1": 46
             },
             "flags": {},
-            "order": 12,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -385,7 +158,7 @@
                 "1": 238
             },
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [
                 {
@@ -659,76 +432,6 @@
             "shape": 1
         },
         {
-            "id": 192,
-            "type": "ImageCrop",
-            "pos": [
-                213.78878784179688,
-                1934.192626953125
-            ],
-            "size": {
-                "0": 210,
-                "1": 118
-            },
-            "flags": {},
-            "order": 22,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "image",
-                    "type": "IMAGE",
-                    "link": 328,
-                    "label": "image"
-                },
-                {
-                    "name": "width",
-                    "type": "INT",
-                    "link": 329,
-                    "widget": {
-                        "name": "width"
-                    },
-                    "label": "width"
-                },
-                {
-                    "name": "height",
-                    "type": "INT",
-                    "link": 330,
-                    "widget": {
-                        "name": "height"
-                    },
-                    "label": "height"
-                },
-                {
-                    "name": "x",
-                    "type": "INT",
-                    "link": 331,
-                    "widget": {
-                        "name": "x"
-                    },
-                    "label": "x"
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
-                    "links": [
-                        333
-                    ],
-                    "slot_index": 0,
-                    "label": "IMAGE"
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "ImageCrop"
-            },
-            "widgets_values": [
-                512,
-                512,
-                0,
-                0
-            ]
-        },
-        {
             "id": 193,
             "type": "GetImageSizeAndCount",
             "pos": [
@@ -740,7 +443,7 @@
                 "1": 86
             },
             "flags": {},
-            "order": 8,
+            "order": 7,
             "mode": 0,
             "inputs": [
                 {
@@ -830,7 +533,7 @@
                 "1": 246
             },
             "flags": {},
-            "order": 9,
+            "order": 8,
             "mode": 0,
             "inputs": [
                 {
@@ -857,7 +560,7 @@
                 "1": 246
             },
             "flags": {},
-            "order": 13,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -972,7 +675,7 @@
                 "1": 126
             },
             "flags": {},
-            "order": 4,
+            "order": 5,
             "mode": 4,
             "inputs": [
                 {
@@ -1018,75 +721,6 @@
             ]
         },
         {
-            "id": 179,
-            "type": "UNETLoader",
-            "pos": [
-                -818.3219604492188,
-                2608.082275390625
-            ],
-            "size": {
-                "0": 222.10606384277344,
-                "1": 82
-            },
-            "flags": {},
-            "order": 0,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [
-                {
-                    "name": "MODEL",
-                    "type": "MODEL",
-                    "links": [
-                        303
-                    ],
-                    "slot_index": 0,
-                    "label": "MODEL"
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "UNETLoader"
-            },
-            "widgets_values": [
-                "flux1-dev-fp8.safetensors",
-                "default"
-            ]
-        },
-        {
-            "id": 176,
-            "type": "DualCLIPLoader",
-            "pos": [
-                -867,
-                2428
-            ],
-            "size": {
-                "0": 274.7608642578125,
-                "1": 106
-            },
-            "flags": {},
-            "order": 1,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [
-                {
-                    "name": "CLIP",
-                    "type": "CLIP",
-                    "links": [
-                        304
-                    ],
-                    "slot_index": 0,
-                    "label": "CLIP"
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "DualCLIPLoader"
-            },
-            "widgets_values": [
-                "flux/clip_l.safetensors",
-                "flux/t5xxl_fp16.safetensors",
-                "flux"
-            ]
-        },
-        {
             "id": 198,
             "type": "LoraLoader",
             "pos": [
@@ -1098,7 +732,7 @@
                 "1": 126
             },
             "flags": {},
-            "order": 6,
+            "order": 9,
             "mode": 0,
             "inputs": [
                 {
@@ -1155,7 +789,7 @@
                 "1": 58
             },
             "flags": {},
-            "order": 2,
+            "order": 0,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1189,7 +823,7 @@
                 "1": 314
             },
             "flags": {},
-            "order": 3,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1216,6 +850,401 @@
             "widgets_values": [
                 "FlowScale White.png",
                 "image"
+            ]
+        },
+        {
+            "id": 179,
+            "type": "UNETLoader",
+            "pos": [
+                -862,
+                2608
+            ],
+            "size": {
+                "0": 222.10606384277344,
+                "1": 82
+            },
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "MODEL",
+                    "type": "MODEL",
+                    "links": [
+                        303
+                    ],
+                    "slot_index": 0,
+                    "label": "MODEL"
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "UNETLoader"
+            },
+            "widgets_values": [
+                "flux1-dev-fp8.safetensors",
+                "default"
+            ]
+        },
+        {
+            "id": 176,
+            "type": "DualCLIPLoader",
+            "pos": [
+                -873,
+                2433
+            ],
+            "size": {
+                "0": 274.7608642578125,
+                "1": 106
+            },
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "CLIP",
+                    "type": "CLIP",
+                    "links": [
+                        304
+                    ],
+                    "slot_index": 0,
+                    "label": "CLIP"
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "DualCLIPLoader"
+            },
+            "widgets_values": [
+                "flux/clip_l.safetensors",
+                "flux/t5xxl_fp16.safetensors",
+                "flux"
+            ]
+        },
+        {
+            "id": 183,
+            "type": "ImageConcanate",
+            "pos": [
+                263,
+                2948
+            ],
+            "size": {
+                "0": 210,
+                "1": 102
+            },
+            "flags": {},
+            "order": 17,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "image1",
+                    "type": "IMAGE",
+                    "link": 309,
+                    "label": "image1"
+                },
+                {
+                    "name": "image2",
+                    "type": "IMAGE",
+                    "link": 310,
+                    "label": "image2"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        320,
+                        336
+                    ],
+                    "slot_index": 0,
+                    "label": "IMAGE"
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "ImageConcanate"
+            },
+            "widgets_values": [
+                "right",
+                true
+            ]
+        },
+        {
+            "id": 185,
+            "type": "CR Draw Shape",
+            "pos": [
+                20,
+                3166
+            ],
+            "size": {
+                "0": 210,
+                "1": 270
+            },
+            "flags": {},
+            "order": 14,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "width",
+                    "type": "INT",
+                    "link": 314,
+                    "widget": {
+                        "name": "width"
+                    },
+                    "label": "width"
+                },
+                {
+                    "name": "height",
+                    "type": "INT",
+                    "link": 315,
+                    "widget": {
+                        "name": "height"
+                    },
+                    "label": "height"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        310
+                    ],
+                    "slot_index": 0,
+                    "label": "IMAGE"
+                },
+                {
+                    "name": "show_help",
+                    "type": "STRING",
+                    "links": null,
+                    "label": "show_help"
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "CR Draw Shape"
+            },
+            "widgets_values": [
+                512,
+                512,
+                "square",
+                "white",
+                "white",
+                0,
+                0,
+                1,
+                0,
+                "#000000",
+                "#000000"
+            ]
+        },
+        {
+            "id": 182,
+            "type": "CR Draw Shape",
+            "pos": [
+                20,
+                2825
+            ],
+            "size": {
+                "0": 210.61248779296875,
+                "1": 270
+            },
+            "flags": {},
+            "order": 13,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "width",
+                    "type": "INT",
+                    "link": 307,
+                    "widget": {
+                        "name": "width"
+                    },
+                    "label": "width"
+                },
+                {
+                    "name": "height",
+                    "type": "INT",
+                    "link": 308,
+                    "widget": {
+                        "name": "height"
+                    },
+                    "label": "height"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        309
+                    ],
+                    "slot_index": 0,
+                    "label": "IMAGE"
+                },
+                {
+                    "name": "show_help",
+                    "type": "STRING",
+                    "links": null,
+                    "label": "show_help"
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "CR Draw Shape"
+            },
+            "widgets_values": [
+                512,
+                512,
+                "square",
+                "black",
+                "black",
+                0,
+                0,
+                1,
+                0,
+                "#000000",
+                "#000000"
+            ]
+        },
+        {
+            "id": 192,
+            "type": "ImageCrop",
+            "pos": [
+                213.78878784179688,
+                1934.192626953125
+            ],
+            "size": {
+                "0": 210,
+                "1": 118
+            },
+            "flags": {},
+            "order": 22,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 328,
+                    "label": "image"
+                },
+                {
+                    "name": "width",
+                    "type": "INT",
+                    "link": 329,
+                    "widget": {
+                        "name": "width"
+                    },
+                    "label": "width"
+                },
+                {
+                    "name": "height",
+                    "type": "INT",
+                    "link": 330,
+                    "widget": {
+                        "name": "height"
+                    },
+                    "label": "height"
+                },
+                {
+                    "name": "x",
+                    "type": "INT",
+                    "link": 331,
+                    "widget": {
+                        "name": "x"
+                    },
+                    "label": "x"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        333,
+                        347
+                    ],
+                    "slot_index": 0,
+                    "label": "IMAGE"
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "ImageCrop"
+            },
+            "widgets_values": [
+                512,
+                512,
+                0,
+                0
+            ]
+        },
+        {
+            "id": 199,
+            "type": "SaveImage",
+            "pos": [
+                724,
+                1911
+            ],
+            "size": {
+                "0": 315,
+                "1": 58
+            },
+            "flags": {},
+            "order": 24,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 347
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "SaveImage"
+            },
+            "widgets_values": [
+                "ComfyUI"
+            ]
+        },
+        {
+            "id": 177,
+            "type": "CLIPTextEncodeFlux",
+            "pos": [
+                -550.322021484375,
+                2342.082763671875
+            ],
+            "size": {
+                "0": 384.5967102050781,
+                "1": 348.4637145996094
+            },
+            "flags": {},
+            "order": 15,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 338,
+                    "label": "clip"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        324,
+                        325
+                    ],
+                    "slot_index": 0,
+                    "label": "CONDITIONING"
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "CLIPTextEncodeFlux"
+            },
+            "widgets_values": [
+                "",
+                "These two images show a logo design and its coffee brand; [Image 1] A logo; [Image 2] The same logo printed on a disposable coffee cup, elegantly wrapped around the paper surface of the coffee cup",
+                2.8000000000000003
             ]
         }
     ],
@@ -1515,16 +1544,24 @@
             198,
             1,
             "CLIP"
+        ],
+        [
+            347,
+            192,
+            0,
+            199,
+            0,
+            "IMAGE"
         ]
     ],
     "groups": [],
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.5445000000000034,
+            "scale": 1.0610764609500123,
             "offset": [
-                1545.7198376438853,
-                -1931.35201484753
+                834.3898618179097,
+                -2377.9715455906944
             ]
         },
         "groupNodes": {},
