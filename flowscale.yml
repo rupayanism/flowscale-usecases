@@ -52,7 +52,7 @@ workflows:
   - id: 3v3m7br9qo6
     name: logo_visualizer_api.json
     file: in_context_lora_workflows/logo_visualizer_api.json
-    version: 4
+    version: 5
     description: ''
     inputs:
       - path: 180.inputs.image
@@ -96,4 +96,4 @@ normal_workflows:
   - id: w7nvpr4zlfj
     name: logo_visualizer.json
     file: in_context_lora_workflows/logo_visualizer.json
-    version: 4
+    version: 5
