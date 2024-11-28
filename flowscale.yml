@@ -1,4 +1,4 @@
-version: 8
+version: 9
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -55,23 +55,23 @@ workflows:
     version: 6
     description: ''
     inputs:
-      - path: 180.inputs.image
-        label: Logo Image
-        parameter_name: image_90563
-        type: string
-        demo_type: image
-        category: input
-        randomize: false
       - path: 205.inputs.text
-        label: Explain Logo Placement
-        parameter_name: text_14081
+        label: Logo Placement Prompt
+        parameter_name: text_29374
         type: string
         demo_type: text
         category: input
         randomize: false
+      - path: 180.inputs.image
+        label: Brand Logo
+        parameter_name: image_33916
+        type: string
+        demo_type: image
+        category: input
+        randomize: false
       - path: 199.inputs.filename_prefix
         label: filename_prefix
-        parameter_name: filename_prefix_31896
+        parameter_name: filename_prefix_80779
         type: string
         demo_type: text
         category: output
