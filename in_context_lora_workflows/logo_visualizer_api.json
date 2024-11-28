@@ -16,7 +16,7 @@
     "177": {
         "inputs": {
             "clip_l": "",
-            "t5xxl": "These two images show a logo design and its coffee brand; [Image 1] A logo; [Image 2] The same logo printed on a disposable coffee cup, elegantly wrapped around the paper surface of the coffee cup",
+            "t5xxl": "These two images show a logo design and its coffee brand; [Image 1] A logo; [Image 2] The same logo printed on a disposable coffee cup, elegantly wrapped around the paper surface of the coffee cup ",
             "guidance": 2.8000000000000003,
             "clip": [
                 "198",
