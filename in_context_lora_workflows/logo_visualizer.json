@@ -715,7 +715,7 @@
                 "Node name for S&R": "LoraLoader"
             },
             "widgets_values": [
-                "xlabs_flux/ÃÂÃÂ¦ÃÂÃÂ·ÃÂÃÂ±ÃÂÃÂ§ÃÂÃÂÃÂÃÂ°ÃÂÃÂ¨ÃÂÃÂÃÂÃÂ²ÃÂÃÂ¦ÃÂÃÂÃÂÃÂÃÂÃÂ¥ÃÂÃÂ½ÃÂÃÂ±-Dark-Gray-Photography-flux.safetensors",
+                "xlabs_flux/ÃÂÃÂÃÂÃÂ¦ÃÂÃÂÃÂÃÂ·ÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂÃÂ§ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ¨ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ²ÃÂÃÂÃÂÃÂ¦ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¥ÃÂÃÂÃÂÃÂ½ÃÂÃÂÃÂÃÂ±-Dark-Gray-Photography-flux.safetensors",
                 1,
                 1
             ]
@@ -1136,46 +1136,6 @@
             ]
         },
         {
-            "id": 180,
-            "type": "LoadImage",
-            "pos": [
-                -908,
-                2825
-            ],
-            "size": {
-                "0": 315,
-                "1": 314
-            },
-            "flags": {},
-            "order": 3,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [
-                {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
-                    "links": [
-                        319
-                    ],
-                    "slot_index": 0,
-                    "label": "IMAGE"
-                },
-                {
-                    "name": "MASK",
-                    "type": "MASK",
-                    "links": null,
-                    "label": "MASK"
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "LoadImage"
-            },
-            "widgets_values": [
-                "FlowScale White.png",
-                "image"
-            ]
-        },
-        {
             "id": 199,
             "type": "SaveImage",
             "pos": [
@@ -1201,57 +1161,6 @@
             },
             "widgets_values": [
                 "ComfyUI"
-            ]
-        },
-        {
-            "id": 177,
-            "type": "CLIPTextEncodeFlux",
-            "pos": [
-                -550.322021484375,
-                2342.082763671875
-            ],
-            "size": {
-                "0": 384.5967102050781,
-                "1": 348.4637145996094
-            },
-            "flags": {},
-            "order": 13,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "clip",
-                    "type": "CLIP",
-                    "link": 338,
-                    "label": "clip"
-                },
-                {
-                    "name": "t5xxl",
-                    "type": "STRING",
-                    "link": 350,
-                    "widget": {
-                        "name": "t5xxl"
-                    }
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "CONDITIONING",
-                    "type": "CONDITIONING",
-                    "links": [
-                        324,
-                        325
-                    ],
-                    "slot_index": 0,
-                    "label": "CONDITIONING"
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "CLIPTextEncodeFlux"
-            },
-            "widgets_values": [
-                "",
-                "",
-                2.8000000000000003
             ]
         },
         {
@@ -1320,7 +1229,7 @@
                 "1": 106.14378356933594
             },
             "flags": {},
-            "order": 4,
+            "order": 3,
             "mode": 0,
             "outputs": [
                 {
@@ -1337,6 +1246,97 @@
             },
             "widgets_values": [
                 "These two images show a logo design and its coffee brand; [Image 1] A logo; [Image 2] The same logo, with exact same colors, "
+            ]
+        },
+        {
+            "id": 177,
+            "type": "CLIPTextEncodeFlux",
+            "pos": [
+                -550.322021484375,
+                2342.082763671875
+            ],
+            "size": [
+                360.9011828503901,
+                182.0523317715306
+            ],
+            "flags": {},
+            "order": 13,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 338,
+                    "label": "clip"
+                },
+                {
+                    "name": "t5xxl",
+                    "type": "STRING",
+                    "link": 350,
+                    "widget": {
+                        "name": "t5xxl"
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        324,
+                        325
+                    ],
+                    "slot_index": 0,
+                    "label": "CONDITIONING"
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "CLIPTextEncodeFlux"
+            },
+            "widgets_values": [
+                "",
+                "",
+                2.8000000000000003
+            ]
+        },
+        {
+            "id": 180,
+            "type": "LoadImage",
+            "pos": [
+                -908,
+                2825
+            ],
+            "size": {
+                "0": 315,
+                "1": 314
+            },
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        319
+                    ],
+                    "slot_index": 0,
+                    "label": "IMAGE"
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null,
+                    "label": "MASK"
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "25231.png",
+                "image"
             ]
         },
         {
@@ -1706,10 +1706,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 1.167184107045017,
+            "scale": 0.5989500000000095,
             "offset": [
-                1405.007503399356,
-                -2653.1061731599516
+                364.63339612230703,
+                -1926.3845383967066
             ]
         },
         "groupNodes": {},
