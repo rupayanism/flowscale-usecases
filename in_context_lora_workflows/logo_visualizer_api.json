@@ -37,7 +37,7 @@
     },
     "180": {
         "inputs": {
-            "image": "FlowScale White.png",
+            "image": "25231.png",
             "upload": "image"
         },
         "class_type": "LoadImage"
