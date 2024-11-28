@@ -16,7 +16,10 @@
     "177": {
         "inputs": {
             "clip_l": "",
-            "t5xxl": "These two images show a logo design and its coffee brand; [Image 1] A logo; [Image 2] The same logo printed on a disposable coffee cup, elegantly wrapped around the paper surface of the coffee cup ",
+            "t5xxl": [
+                "201",
+                0
+            ],
             "guidance": 2.8000000000000003,
             "clip": [
                 "198",
@@ -317,5 +320,31 @@
             ]
         },
         "class_type": "SaveImage"
+    },
+    "201": {
+        "inputs": {
+            "prompt1": [
+                "203",
+                0
+            ],
+            "prompt2": [
+                "205",
+                0
+            ],
+            "separator": ""
+        },
+        "class_type": "easy promptConcat"
+    },
+    "203": {
+        "inputs": {
+            "text": "These two images show a logo design and its coffee brand; [Image 1] A logo; [Image 2]"
+        },
+        "class_type": "Text _O"
+    },
+    "205": {
+        "inputs": {
+            "text": "The same logo printed on a disposable coffee cup, elegantly wrapped around the paper surface of the coffee cup "
+        },
+        "class_type": "Text _O"
     }
 }
