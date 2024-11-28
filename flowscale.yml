@@ -1,4 +1,4 @@
-version: 6
+version: 7
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -55,36 +55,29 @@ workflows:
     version: 4
     description: ''
     inputs:
-      - path: 177.inputs.t5xxl
-        label: Positive Prompt
-        parameter_name: t5xxl_12599
-        type: string
-        demo_type: text
-        category: input
-        randomize: false
       - path: 180.inputs.image
         label: Logo Image
-        parameter_name: image_67231
+        parameter_name: image_31079
         type: string
         demo_type: image
         category: input
         randomize: false
-      - path: 191.inputs.cfg
-        label: CFG Scale
-        parameter_name: cfg_68654
-        type: integer
-        demo_type: number
+      - path: 205.inputs.text
+        label: Prompt
+        parameter_name: text_14301
+        type: string
+        demo_type: text
         category: input
         randomize: false
       - path: 199.inputs.filename_prefix
         label: filename_prefix
-        parameter_name: filename_prefix_75275
+        parameter_name: filename_prefix_39280
         type: string
         demo_type: text
         category: output
         randomize: true
     outputs:
-      - label: Output Image
+      - label: Output
         demo_type: image
     skip_preprocess: true
   - id: qr9nlwvxuw
