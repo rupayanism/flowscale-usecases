@@ -337,13 +337,13 @@
     },
     "203": {
         "inputs": {
-            "text": "These two images show a logo design and its coffee brand; [Image 1] A logo; [Image 2]"
+            "text": "These two images show a logo design and its coffee brand; [Image 1] A logo; [Image 2] The same logo, with exact same colors, "
         },
         "class_type": "Text _O"
     },
     "205": {
         "inputs": {
-            "text": "The same logo printed on a disposable coffee cup, elegantly wrapped around the paper surface of the coffee cup "
+            "text": "elegantly wrapped around the paper surface of the coffee cup "
         },
         "class_type": "Text _O"
     }
