@@ -37,7 +37,7 @@
     },
     "180": {
         "inputs": {
-            "image": "25231.png",
+            "image": "FlowScale White.png",
             "upload": "image"
         },
         "class_type": "LoadImage"
@@ -337,13 +337,13 @@
     },
     "203": {
         "inputs": {
-            "text": "These two images show a logo design and its coffee brand; [Image 1] A logo; [Image 2] The same logo, with exact same colors, "
+            "text": "These two images show a logo design; [Image 1] A logo; [Image 2] The same logo, with exact same colors, "
         },
         "class_type": "Text _O"
     },
     "205": {
         "inputs": {
-            "text": "elegantly wrapped around the paper surface of the coffee cup "
+            "text": "elegantly placed on a black diary kept on a table"
         },
         "class_type": "Text _O"
     }
