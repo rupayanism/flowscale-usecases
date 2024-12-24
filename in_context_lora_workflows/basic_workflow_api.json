@@ -1,7 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": "The two-panel image showcases the joyful identity of a software brand, with the left panel showing an aesthetic F letter and the brand name \"FlowScale AI\" in a futuristic, visionary font on a white background; [LEFT] while the right panel translates the design on the front of a black tshirt with the F logo in it's actual color, worn by a fit person in a conference, emphasizing the brand's futuristic vibe.",
+            "text": "[MOVIE-SHOTS] In a vibrant festival, [SCENE-1] we find <Leo>, a shy boy, standing at the edge of a bustling carnival, eyes wide with awe at the colorful rides and laughter, [SCENE-2] transitioning to him reluctantly trying a daring game, his friends cheering him on, [SCENE-3] culminating in a triumphant moment as he wins a giant stuffed bear, his face beaming with pride as he holds it up for all to see.",
             "clip": [
                 "38",
                 1
@@ -111,7 +111,7 @@
     },
     "25": {
         "inputs": {
-            "noise_seed": 824699909194287
+            "noise_seed": 690277076595542
         },
         "class_type": "RandomNoise"
     },
@@ -127,8 +127,8 @@
     },
     "27": {
         "inputs": {
-            "width": 1024,
-            "height": 768,
+            "width": 576,
+            "height": 1024,
             "batch_size": 1
         },
         "class_type": "EmptySD3LatentImage"
@@ -137,8 +137,8 @@
         "inputs": {
             "max_shift": 1.15,
             "base_shift": 0.5,
-            "width": 1024,
-            "height": 768,
+            "width": 576,
+            "height": 1024,
             "model": [
                 "38",
                 0
@@ -148,7 +148,7 @@
     },
     "38": {
         "inputs": {
-            "lora_name": "in-context/visual-identity-design.safetensors",
+            "lora_name": "in-context/film-storyboard.safetensors",
             "strength_model": 1,
             "strength_clip": 1,
             "model": [
