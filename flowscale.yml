@@ -5,9 +5,9 @@ user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
 workflows:
   - id: scup6a58vhs
-    name: basic_workflow_api.json
-    file: in_context_lora_workflows/basic_workflow_api.json
-    version: 5
+    name: film_storyboarding_api.json
+    file: in_context_lora_workflows/film_storyboarding_api.json
+    version: 6
     description: ''
     inputs:
       - path: 6.inputs.text
@@ -81,18 +81,19 @@ workflows:
         demo_type: image
     skip_preprocess: true
   - id: qr9nlwvxuw
-    name: basic_workflow.json
+    name: film_storyboarding.json
     description: ''
-    file: in_context_lora_workflows/basic_workflow.json
+    file: in_context_lora_workflows/film_storyboarding.json
+    version: .nan
   - id: z8qucbx2wco
     name: logo_visualizer.json
     description: ''
     file: in_context_lora_workflows/logo_visualizer.json
 normal_workflows:
   - id: f0rs23vqy3d
-    name: basic_workflow.json
-    file: in_context_lora_workflows/basic_workflow.json
-    version: 5
+    name: film_storyboarding.json
+    file: in_context_lora_workflows/film_storyboarding.json
+    version: 6
   - id: w7nvpr4zlfj
     name: logo_visualizer.json
     file: in_context_lora_workflows/logo_visualizer.json
