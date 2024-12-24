@@ -9,10 +9,10 @@
                 866,
                 367
             ],
-            "size": {
-                "0": 210,
-                "1": 46
-            },
+            "size": [
+                210,
+                46
+            ],
             "flags": {},
             "order": 17,
             "mode": 0,
@@ -40,7 +40,8 @@
             ],
             "properties": {
                 "Node name for S&R": "VAEDecode"
-            }
+            },
+            "widgets_values": []
         },
         {
             "id": 37,
@@ -49,10 +50,10 @@
                 480,
                 1344
             ],
-            "size": {
-                "0": 314.99755859375,
-                "1": 117.98363494873047
-            },
+            "size": [
+                314.99755859375,
+                117.98363494873047
+            ],
             "flags": {},
             "order": 0,
             "mode": 0,
@@ -74,10 +75,10 @@
                 48,
                 576
             ],
-            "size": {
-                "0": 336,
-                "1": 288
-            },
+            "size": [
+                336,
+                288
+            ],
             "flags": {},
             "order": 1,
             "mode": 0,
@@ -99,10 +100,10 @@
                 576,
                 48
             ],
-            "size": {
-                "0": 222.3482666015625,
-                "1": 46
-            },
+            "size": [
+                222.3482666015625,
+                46
+            ],
             "flags": {},
             "order": 15,
             "mode": 0,
@@ -133,7 +134,8 @@
             ],
             "properties": {
                 "Node name for S&R": "BasicGuider"
-            }
+            },
+            "widgets_values": []
         },
         {
             "id": 16,
@@ -142,10 +144,10 @@
                 480,
                 912
             ],
-            "size": {
-                "0": 315,
-                "1": 58
-            },
+            "size": [
+                315,
+                58
+            ],
             "flags": {},
             "order": 2,
             "mode": 0,
@@ -174,10 +176,10 @@
                 480,
                 1008
             ],
-            "size": {
-                "0": 315,
-                "1": 106
-            },
+            "size": [
+                315,
+                106
+            ],
             "flags": {},
             "order": 13,
             "mode": 0,
@@ -215,10 +217,10 @@
                 864,
                 192
             ],
-            "size": {
-                "0": 272.3617858886719,
-                "1": 124.53733825683594
-            },
+            "size": [
+                272.3617858886719,
+                124.53733825683594
+            ],
             "flags": {},
             "order": 16,
             "mode": 0,
@@ -273,7 +275,8 @@
             ],
             "properties": {
                 "Node name for S&R": "SamplerCustomAdvanced"
-            }
+            },
+            "widgets_values": []
         },
         {
             "id": 26,
@@ -282,10 +285,10 @@
                 480,
                 144
             ],
-            "size": {
-                "0": 317.4000244140625,
-                "1": 58
-            },
+            "size": [
+                317.4000244140625,
+                58
+            ],
             "flags": {},
             "order": 14,
             "mode": 0,
@@ -323,10 +326,10 @@
                 480,
                 624
             ],
-            "size": {
-                "0": 315,
-                "1": 106
-            },
+            "size": [
+                315,
+                106
+            ],
             "flags": {},
             "order": 10,
             "mode": 0,
@@ -363,50 +366,10 @@
                 "Node name for S&R": "EmptySD3LatentImage"
             },
             "widgets_values": [
+                576,
                 1024,
-                768,
                 1
             ]
-        },
-        {
-            "id": 34,
-            "type": "PrimitiveNode",
-            "pos": [
-                432,
-                480
-            ],
-            "size": {
-                "0": 210,
-                "1": 82
-            },
-            "flags": {},
-            "order": 3,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [
-                {
-                    "name": "INT",
-                    "type": "INT",
-                    "links": [
-                        112,
-                        115
-                    ],
-                    "slot_index": 0,
-                    "widget": {
-                        "name": "width"
-                    }
-                }
-            ],
-            "title": "width",
-            "properties": {
-                "Run widget replace on values": false
-            },
-            "widgets_values": [
-                1024,
-                "fixed"
-            ],
-            "color": "#323",
-            "bgcolor": "#535"
         },
         {
             "id": 25,
@@ -415,12 +378,12 @@
                 480,
                 768
             ],
-            "size": {
-                "0": 315,
-                "1": 82
-            },
+            "size": [
+                315,
+                82
+            ],
             "flags": {},
-            "order": 4,
+            "order": 3,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -437,7 +400,7 @@
                 "Node name for S&R": "RandomNoise"
             },
             "widgets_values": [
-                824699909194287,
+                690277076595542,
                 "randomize"
             ],
             "color": "#2a363b",
@@ -450,10 +413,10 @@
                 479,
                 1152
             ],
-            "size": {
-                "0": 315,
-                "1": 130
-            },
+            "size": [
+                315,
+                130
+            ],
             "flags": {},
             "order": 11,
             "mode": 0,
@@ -501,8 +464,8 @@
             "widgets_values": [
                 1.15,
                 0.5,
-                1024,
-                768
+                576,
+                1024
             ]
         },
         {
@@ -512,10 +475,10 @@
                 1253,
                 241
             ],
-            "size": {
-                "0": 985.3012084960938,
-                "1": 1060.3828125
-            },
+            "size": [
+                985.3012084960938,
+                1060.3828125
+            ],
             "flags": {},
             "order": 18,
             "mode": 0,
@@ -527,7 +490,9 @@
                 }
             ],
             "outputs": [],
-            "properties": {},
+            "properties": {
+                "Node name for S&R": "SaveImage"
+            },
             "widgets_values": [
                 "ComfyUI"
             ]
@@ -539,12 +504,12 @@
                 45,
                 -38
             ],
-            "size": {
-                "0": 315,
-                "1": 82
-            },
+            "size": [
+                315,
+                82
+            ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -575,12 +540,12 @@
                 48,
                 288
             ],
-            "size": {
-                "0": 315,
-                "1": 106
-            },
+            "size": [
+                315,
+                106
+            ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -610,12 +575,12 @@
                 48,
                 432
             ],
-            "size": {
-                "0": 311.81634521484375,
-                "1": 60.429901123046875
-            },
+            "size": [
+                311.81634521484375,
+                60.429901123046875
+            ],
             "flags": {},
-            "order": 7,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -643,10 +608,10 @@
                 50,
                 97
             ],
-            "size": {
-                "0": 315,
-                "1": 126
-            },
+            "size": [
+                315,
+                126
+            ],
             "flags": {},
             "order": 9,
             "mode": 0,
@@ -684,10 +649,50 @@
                 "Node name for S&R": "LoraLoader"
             },
             "widgets_values": [
-                "in-context/visual-identity-design.safetensors",
+                "in-context/film-storyboard.safetensors",
                 1,
                 1
             ]
+        },
+        {
+            "id": 34,
+            "type": "PrimitiveNode",
+            "pos": [
+                432,
+                480
+            ],
+            "size": [
+                210,
+                82
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "INT",
+                    "type": "INT",
+                    "links": [
+                        112,
+                        115
+                    ],
+                    "slot_index": 0,
+                    "widget": {
+                        "name": "width"
+                    }
+                }
+            ],
+            "title": "width",
+            "properties": {
+                "Run widget replace on values": false
+            },
+            "widgets_values": [
+                576,
+                "fixed"
+            ],
+            "color": "#323",
+            "bgcolor": "#535"
         },
         {
             "id": 35,
@@ -696,10 +701,10 @@
                 672,
                 480
             ],
-            "size": {
-                "0": 210,
-                "1": 82
-            },
+            "size": [
+                210,
+                82
+            ],
             "flags": {},
             "order": 8,
             "mode": 0,
@@ -723,7 +728,7 @@
                 "Run widget replace on values": false
             },
             "widgets_values": [
-                768,
+                1024,
                 "fixed"
             ],
             "color": "#323",
@@ -736,10 +741,10 @@
                 384,
                 240
             ],
-            "size": {
-                "0": 422.84503173828125,
-                "1": 164.31304931640625
-            },
+            "size": [
+                422.84503173828125,
+                164.31304931640625
+            ],
             "flags": {},
             "order": 12,
             "mode": 0,
@@ -765,7 +770,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "The two-panel image showcases the joyful identity of a software brand, with the left panel showing an aesthetic F letter and the brand name \"FlowScale AI\" in a futuristic, visionary font on a white background; [LEFT] while the right panel translates the design on the front of a black tshirt with the F logo in it's actual color, worn by a fit person in a conference, emphasizing the brand's futuristic vibe."
+                "[MOVIE-SHOTS] In a vibrant festival, [SCENE-1] we find <Leo>, a shy boy, standing at the edge of a bustling carnival, eyes wide with awe at the colorful rides and laughter, [SCENE-2] transitioning to him reluctantly trying a daring game, his friends cheering him on, [SCENE-3] culminating in a triumphant moment as he wins a giant stuffed bear, his face beaming with pride as he holds it up for all to see."
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -937,10 +942,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.3797498335832443,
+            "scale": 0.6115909044841515,
             "offset": [
-                729.515699864194,
-                327.2083628797999
+                59.84339000158903,
+                5.740973286992592
             ]
         },
         "groupNodes": {}
