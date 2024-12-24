@@ -1,4 +1,4 @@
-version: 9
+version: 10
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -10,43 +10,22 @@ workflows:
     version: 7
     description: ''
     inputs:
-      - path: 6.inputs.text
-        label: Positive Prompt
-        parameter_name: text_30490
+      - path: 48.inputs.text
+        label: Describe Scenes
+        parameter_name: text_57588
         type: string
         demo_type: text
         category: input
         randomize: false
-      - path: 38.inputs.strength_model
-        label: Strength Model
-        parameter_name: strength_model_81009
-        type: integer
-        demo_type: number
-        category: input
-        randomize: false
-      - path: 38.inputs.strength_clip
-        label: Strength Clip
-        parameter_name: strength_clip_65080
-        type: integer
-        demo_type: number
-        category: input
-        randomize: false
-      - path: 26.inputs.guidance
-        label: Flux Guidance
-        parameter_name: guidance_56980
-        type: integer
-        demo_type: number
-        category: input
-        randomize: false
       - path: 9.inputs.filename_prefix
         label: filename_prefix
-        parameter_name: filename_prefix_76462
+        parameter_name: filename_prefix_48119
         type: string
         demo_type: text
         category: output
         randomize: true
     outputs:
-      - label: Output Image
+      - label: Storyboard
         demo_type: image
     skip_preprocess: true
   - id: 3v3m7br9qo6
