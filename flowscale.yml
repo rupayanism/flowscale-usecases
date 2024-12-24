@@ -7,7 +7,7 @@ workflows:
   - id: scup6a58vhs
     name: basic_workflow_api.json
     file: in_context_lora_workflows/basic_workflow_api.json
-    version: 4
+    version: 5
     description: ''
     inputs:
       - path: 6.inputs.text
@@ -92,7 +92,7 @@ normal_workflows:
   - id: f0rs23vqy3d
     name: basic_workflow.json
     file: in_context_lora_workflows/basic_workflow.json
-    version: 4
+    version: 5
   - id: w7nvpr4zlfj
     name: logo_visualizer.json
     file: in_context_lora_workflows/logo_visualizer.json
