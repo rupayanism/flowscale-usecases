@@ -241,26 +241,5 @@
     "pip": [],
     "apt": [],
     "cached": "False"
-  },
-  {
-    "name": "ComfyUI-LivePortraitKJ",
-    "url": "https://github.com/kijai/ComfyUI-LivePortraitKJ",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {
-      "author": "kijai",
-      "title": "ComfyUI-LivePortraitKJ",
-      "id": "liveportrait-kijai",
-      "reference": "https://github.com/kijai/ComfyUI-LivePortraitKJ",
-      "files": [
-        "https://github.com/kijai/ComfyUI-LivePortraitKJ"
-      ],
-      "install_type": "git-clone",
-      "description": "Nodes for [a/LivePortrait](https://github.com/KwaiVGI/LivePortrait)"
-    },
-    "nodes": [],
-    "pip": [],
-    "apt": [],
-    "cached": "False"
   }
 ]
