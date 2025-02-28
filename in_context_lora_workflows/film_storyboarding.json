@@ -39,6 +39,8 @@
                 }
             ],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "VAEDecode"
             },
             "widgets_values": []
@@ -125,14 +127,16 @@
                 {
                     "name": "GUIDER",
                     "type": "GUIDER",
+                    "shape": 3,
                     "links": [
                         30
                     ],
-                    "slot_index": 0,
-                    "shape": 3
+                    "slot_index": 0
                 }
             ],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "BasicGuider"
             },
             "widgets_values": []
@@ -156,13 +160,15 @@
                 {
                     "name": "SAMPLER",
                     "type": "SAMPLER",
+                    "shape": 3,
                     "links": [
                         19
-                    ],
-                    "shape": 3
+                    ]
                 }
             ],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "KSamplerSelect"
             },
             "widgets_values": [
@@ -195,13 +201,15 @@
                 {
                     "name": "SIGMAS",
                     "type": "SIGMAS",
+                    "shape": 3,
                     "links": [
                         20
-                    ],
-                    "shape": 3
+                    ]
                 }
             ],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "BasicScheduler"
             },
             "widgets_values": [
@@ -260,20 +268,22 @@
                 {
                     "name": "output",
                     "type": "LATENT",
+                    "shape": 3,
                     "links": [
                         24
                     ],
-                    "slot_index": 0,
-                    "shape": 3
+                    "slot_index": 0
                 },
                 {
                     "name": "denoised_output",
                     "type": "LATENT",
-                    "links": null,
-                    "shape": 3
+                    "shape": 3,
+                    "links": null
                 }
             ],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "SamplerCustomAdvanced"
             },
             "widgets_values": []
@@ -303,14 +313,16 @@
                 {
                     "name": "CONDITIONING",
                     "type": "CONDITIONING",
+                    "shape": 3,
                     "links": [
                         151
                     ],
-                    "slot_index": 0,
-                    "shape": 3
+                    "slot_index": 0
                 }
             ],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "FluxGuidance"
             },
             "widgets_values": [
@@ -337,32 +349,34 @@
                 {
                     "name": "width",
                     "type": "INT",
-                    "link": 112,
                     "widget": {
                         "name": "width"
-                    }
+                    },
+                    "link": 112
                 },
                 {
                     "name": "height",
                     "type": "INT",
-                    "link": 113,
                     "widget": {
                         "name": "height"
-                    }
+                    },
+                    "link": 113
                 }
             ],
             "outputs": [
                 {
                     "name": "LATENT",
                     "type": "LATENT",
+                    "shape": 3,
                     "links": [
                         150
                     ],
-                    "slot_index": 0,
-                    "shape": 3
+                    "slot_index": 0
                 }
             ],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "EmptySD3LatentImage"
             },
             "widgets_values": [
@@ -390,13 +404,15 @@
                 {
                     "name": "NOISE",
                     "type": "NOISE",
+                    "shape": 3,
                     "links": [
                         37
-                    ],
-                    "shape": 3
+                    ]
                 }
             ],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "RandomNoise"
             },
             "widgets_values": [
@@ -430,35 +446,37 @@
                 {
                     "name": "width",
                     "type": "INT",
-                    "link": 115,
-                    "slot_index": 1,
                     "widget": {
                         "name": "width"
-                    }
+                    },
+                    "link": 115,
+                    "slot_index": 1
                 },
                 {
                     "name": "height",
                     "type": "INT",
-                    "link": 114,
-                    "slot_index": 2,
                     "widget": {
                         "name": "height"
-                    }
+                    },
+                    "link": 114,
+                    "slot_index": 2
                 }
             ],
             "outputs": [
                 {
                     "name": "MODEL",
                     "type": "MODEL",
+                    "shape": 3,
                     "links": [
                         54,
                         55
                     ],
-                    "slot_index": 0,
-                    "shape": 3
+                    "slot_index": 0
                 }
             ],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "ModelSamplingFlux"
             },
             "widgets_values": [
@@ -491,6 +509,8 @@
             ],
             "outputs": [],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "SaveImage"
             },
             "widgets_values": [
@@ -516,14 +536,16 @@
                 {
                     "name": "MODEL",
                     "type": "MODEL",
+                    "shape": 3,
                     "links": [
                         117
                     ],
-                    "slot_index": 0,
-                    "shape": 3
+                    "slot_index": 0
                 }
             ],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "UNETLoader"
             },
             "widgets_values": [
@@ -552,20 +574,23 @@
                 {
                     "name": "CLIP",
                     "type": "CLIP",
+                    "shape": 3,
                     "links": [
                         118
                     ],
-                    "slot_index": 0,
-                    "shape": 3
+                    "slot_index": 0
                 }
             ],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "DualCLIPLoader"
             },
             "widgets_values": [
                 "flux/t5xxl_fp8_e4m3fn.safetensors",
                 "clip_l.safetensors",
-                "flux"
+                "flux",
+                "default"
             ]
         },
         {
@@ -587,14 +612,16 @@
                 {
                     "name": "VAE",
                     "type": "VAE",
+                    "shape": 3,
                     "links": [
                         12
                     ],
-                    "slot_index": 0,
-                    "shape": 3
+                    "slot_index": 0
                 }
             ],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "VAELoader"
             },
             "widgets_values": [
@@ -646,6 +673,8 @@
                 }
             ],
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "LoraLoader"
             },
             "widgets_values": [
@@ -673,14 +702,14 @@
                 {
                     "name": "INT",
                     "type": "INT",
+                    "widget": {
+                        "name": "width"
+                    },
                     "links": [
                         112,
                         115
                     ],
-                    "slot_index": 0,
-                    "widget": {
-                        "name": "width"
-                    }
+                    "slot_index": 0
                 }
             ],
             "title": "width",
@@ -713,14 +742,14 @@
                 {
                     "name": "INT",
                     "type": "INT",
+                    "widget": {
+                        "name": "height"
+                    },
                     "links": [
                         113,
                         114
                     ],
-                    "slot_index": 0,
-                    "widget": {
-                        "name": "height"
-                    }
+                    "slot_index": 0
                 }
             ],
             "title": "height",
@@ -757,10 +786,10 @@
                 {
                     "name": "text",
                     "type": "STRING",
-                    "link": 156,
                     "widget": {
                         "name": "text"
-                    }
+                    },
+                    "link": 156
                 }
             ],
             "outputs": [
@@ -775,6 +804,8 @@
             ],
             "title": "CLIP Text Encode (Positive Prompt)",
             "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
@@ -784,11 +815,11 @@
             "bgcolor": "#353"
         },
         {
-            "id": 47,
+            "id": 48,
             "type": "Text _O",
             "pos": [
-                395.0105285644531,
-                -384.74481201171875
+                392.60723876953125,
+                -190.77386474609375
             ],
             "size": [
                 389.4537353515625,
@@ -803,44 +834,14 @@
                     "name": "STRING",
                     "type": "STRING",
                     "links": [
-                        152
-                    ],
-                    "slot_index": 0
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "Text _O"
-            },
-            "widgets_values": [
-                "[MOVIE-SHOTS] "
-            ]
-        },
-        {
-            "id": 48,
-            "type": "Text _O",
-            "pos": [
-                392.60723876953125,
-                -190.77386474609375
-            ],
-            "size": [
-                389.4537353515625,
-                102.8492431640625
-            ],
-            "flags": {},
-            "order": 10,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [
-                {
-                    "name": "STRING",
-                    "type": "STRING",
-                    "links": [
                         153
                     ],
                     "slot_index": 0
                 }
             ],
             "properties": {
+                "aux_id": "omar92/ComfyUI-QualityOfLifeSuit_Omar92",
+                "ver": "f09d10dea0afbd3984a284acf8f0913a634e36ec",
                 "Node name for S&R": "Text _O"
             },
             "widgets_values": [
@@ -865,20 +866,20 @@
                 {
                     "name": "prompt1",
                     "type": "STRING",
-                    "link": 152,
+                    "shape": 7,
                     "widget": {
                         "name": "prompt1"
                     },
-                    "shape": 7
+                    "link": 152
                 },
                 {
                     "name": "prompt2",
                     "type": "STRING",
-                    "link": 153,
+                    "shape": 7,
                     "widget": {
                         "name": "prompt2"
                     },
-                    "shape": 7
+                    "link": 153
                 }
             ],
             "outputs": [
@@ -892,6 +893,8 @@
                 }
             ],
             "properties": {
+                "aux_id": "yolain/ComfyUI-Easy-Use",
+                "ver": "0daf114fe8870aeacfea484aa59e7f9973b91cd5",
                 "Node name for S&R": "easy promptConcat"
             },
             "widgets_values": [
@@ -901,6 +904,40 @@
             ],
             "color": "#233",
             "bgcolor": "#355"
+        },
+        {
+            "id": 47,
+            "type": "Text _O",
+            "pos": [
+                395.0105285644531,
+                -384.74481201171875
+            ],
+            "size": [
+                389.4537353515625,
+                102.8492431640625
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "STRING",
+                    "type": "STRING",
+                    "links": [
+                        152
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "aux_id": "omar92/ComfyUI-QualityOfLifeSuit_Omar92",
+                "ver": "f09d10dea0afbd3984a284acf8f0913a634e36ec",
+                "Node name for S&R": "Text _O"
+            },
+            "widgets_values": [
+                "[MOVIE-SHOTS] s"
+            ]
         }
     ],
     "links": [
@@ -1093,10 +1130,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.8954302432552476,
+            "scale": 1.0834705943388505,
             "offset": [
-                -124.75751788120395,
-                640.8012635982583
+                -92.47256154869818,
+                485.69074268354325
             ]
         },
         "groupNodes": {}
