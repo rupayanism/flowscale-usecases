@@ -10,7 +10,10 @@
                 1
             ]
         },
-        "class_type": "CLIPTextEncode"
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Positive Prompt)"
+        }
     },
     "8": {
         "inputs": {
@@ -23,7 +26,10 @@
                 0
             ]
         },
-        "class_type": "VAEDecode"
+        "class_type": "VAEDecode",
+        "_meta": {
+            "title": "VAE Decode"
+        }
     },
     "9": {
         "inputs": {
@@ -33,28 +39,41 @@
                 0
             ]
         },
-        "class_type": "SaveImage"
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
+        }
     },
     "10": {
         "inputs": {
             "vae_name": "ae.safetensors"
         },
-        "class_type": "VAELoader"
+        "class_type": "VAELoader",
+        "_meta": {
+            "title": "Load VAE"
+        }
     },
     "11": {
         "inputs": {
             "clip_name1": "flux/t5xxl_fp8_e4m3fn.safetensors",
             "clip_name2": "clip_l.safetensors",
-            "type": "flux"
+            "type": "flux",
+            "device": "default"
         },
-        "class_type": "DualCLIPLoader"
+        "class_type": "DualCLIPLoader",
+        "_meta": {
+            "title": "DualCLIPLoader"
+        }
     },
     "12": {
         "inputs": {
             "unet_name": "flux1-dev-fp8.safetensors",
             "weight_dtype": "default"
         },
-        "class_type": "UNETLoader"
+        "class_type": "UNETLoader",
+        "_meta": {
+            "title": "Load Diffusion Model"
+        }
     },
     "13": {
         "inputs": {
@@ -79,13 +98,19 @@
                 0
             ]
         },
-        "class_type": "SamplerCustomAdvanced"
+        "class_type": "SamplerCustomAdvanced",
+        "_meta": {
+            "title": "SamplerCustomAdvanced"
+        }
     },
     "16": {
         "inputs": {
             "sampler_name": "euler"
         },
-        "class_type": "KSamplerSelect"
+        "class_type": "KSamplerSelect",
+        "_meta": {
+            "title": "KSamplerSelect"
+        }
     },
     "17": {
         "inputs": {
@@ -97,7 +122,10 @@
                 0
             ]
         },
-        "class_type": "BasicScheduler"
+        "class_type": "BasicScheduler",
+        "_meta": {
+            "title": "BasicScheduler"
+        }
     },
     "22": {
         "inputs": {
@@ -110,13 +138,19 @@
                 0
             ]
         },
-        "class_type": "BasicGuider"
+        "class_type": "BasicGuider",
+        "_meta": {
+            "title": "BasicGuider"
+        }
     },
     "25": {
         "inputs": {
             "noise_seed": 648844592415413
         },
-        "class_type": "RandomNoise"
+        "class_type": "RandomNoise",
+        "_meta": {
+            "title": "RandomNoise"
+        }
     },
     "26": {
         "inputs": {
@@ -126,7 +160,10 @@
                 0
             ]
         },
-        "class_type": "FluxGuidance"
+        "class_type": "FluxGuidance",
+        "_meta": {
+            "title": "FluxGuidance"
+        }
     },
     "27": {
         "inputs": {
@@ -134,7 +171,10 @@
             "height": 1024,
             "batch_size": 1
         },
-        "class_type": "EmptySD3LatentImage"
+        "class_type": "EmptySD3LatentImage",
+        "_meta": {
+            "title": "EmptySD3LatentImage"
+        }
     },
     "30": {
         "inputs": {
@@ -147,7 +187,10 @@
                 0
             ]
         },
-        "class_type": "ModelSamplingFlux"
+        "class_type": "ModelSamplingFlux",
+        "_meta": {
+            "title": "ModelSamplingFlux"
+        }
     },
     "38": {
         "inputs": {
@@ -163,7 +206,10 @@
                 0
             ]
         },
-        "class_type": "LoraLoader"
+        "class_type": "LoraLoader",
+        "_meta": {
+            "title": "Load LoRA"
+        }
     },
     "46": {
         "inputs": {
@@ -177,18 +223,27 @@
             ],
             "separator": ""
         },
-        "class_type": "easy promptConcat"
+        "class_type": "easy promptConcat",
+        "_meta": {
+            "title": "PromptConcat"
+        }
     },
     "47": {
         "inputs": {
-            "text": "[MOVIE-SHOTS] "
+            "text": "[MOVIE-SHOTS] s"
         },
-        "class_type": "Text _O"
+        "class_type": "Text _O",
+        "_meta": {
+            "title": "Text _O"
+        }
     },
     "48": {
         "inputs": {
             "text": "In a vibrant festival, [SCENE-1] we find <Leo>, a shy boy, standing at the edge of a bustling carnival, eyes wide with awe at the colorful rides and laughter, [SCENE-2] transitioning to him reluctantly trying a daring game, his friends cheering him on, [SCENE-3] culminating in a triumphant moment as he wins a giant stuffed bear, his face beaming with pride as he holds it up for all to see."
         },
-        "class_type": "Text _O"
+        "class_type": "Text _O",
+        "_meta": {
+            "title": "Text _O"
+        }
     }
 }
