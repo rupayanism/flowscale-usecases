@@ -7,7 +7,7 @@ workflows:
   - id: scup6a58vhs
     name: film_storyboarding_api.json
     file: in_context_lora_workflows/film_storyboarding_api.json
-    version: 7
+    version: 8
     description: ''
     inputs:
       - path: 48.inputs.text
@@ -63,7 +63,7 @@ normal_workflows:
   - id: f0rs23vqy3d
     name: film_storyboarding.json
     file: in_context_lora_workflows/film_storyboarding.json
-    version: 7
+    version: 8
   - id: w7nvpr4zlfj
     name: logo_visualizer.json
     file: in_context_lora_workflows/logo_visualizer.json
